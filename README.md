@@ -1,6 +1,6 @@
-> # Componente: Input
-![Imgur](https://imgur.com/lBuy9uG.png)
+> # Componente: Dashboard | Header
+![Imgur](https://imgur.com/h5qiz6e.png)
 
 ## Commit
-* Criação do component Input
-* Separando o input de email e senha para ser reutilizado
+* Criação do component dashboard dentro da ./pages
+* Criação do component Header dentro da ./components
