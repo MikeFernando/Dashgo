@@ -8,11 +8,11 @@ interface InputProps extends ChakraInputProps {
 export function Input({ name, label, ...rest }: InputProps) {
    return (
       <FormControl>
-         <FormLabel htmlFor="email">{label}</FormLabel>
+         {!!label && <FormLabel htmlFor={name}>{label}</FormLabel>}
          <ChakraInput
             name={name}
-            type="email"
             id={name}
+            type="email"
             bgColor="gray.900"
             variant="filled"
             _hover={{ bgColor: "gray.900" }}
