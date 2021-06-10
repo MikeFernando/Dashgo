@@ -1,6 +1,5 @@
-> # Componente: Finalizando Header
-![Imgur](https://imgur.com/UAPV9s6.png)
+> # Componente: Sidebar
+![Imgur](https://imgur.com/MiEYLp5.png)
 
 ## Commit
-* Icones de notificações (RiNotificationLine, RiUserAddLine)
-* Nome Email e Foto do perfil
+* Componente Sidebar
