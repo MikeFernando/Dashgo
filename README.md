@@ -1,6 +1,6 @@
-> # Componente: Dashboard | Header
-![Imgur](https://imgur.com/h5qiz6e.png)
+> # Componente: Finalizando Header
+![Imgur](https://imgur.com/UAPV9s6.png)
 
 ## Commit
-* Criação do component dashboard dentro da ./pages
-* Criação do component Header dentro da ./components
+* Icones de notificações (RiNotificationLine, RiUserAddLine)
+* Nome Email e Foto do perfil

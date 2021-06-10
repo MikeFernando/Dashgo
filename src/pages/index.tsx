@@ -23,11 +23,7 @@ export default function Home() {
                <Input name="password" type="password" label="Senha" />
             </Stack>
 
-            <Button
-               type="submit"
-               mt="8"
-               size="lg"
-               colorScheme="pink">
+            <Button type="submit" mt="8" size="lg" colorScheme="pink">
                Entrar
             </Button>
          </Flex>
