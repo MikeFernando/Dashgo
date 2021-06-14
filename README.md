@@ -1,5 +1,5 @@
 > # Graficos com react APEXCHARTS
-![Imgur](https://imgur.com/B6g1ors.png)
+![Imgur](https://imgur.com/JRq7yvA.png)
 
 ## Commit
-* Página users
+* Paginação da tabela usuários
