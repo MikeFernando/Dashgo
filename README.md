@@ -1,5 +1,8 @@
-> # Graficos com react APEXCHARTS
-![Imgur](https://imgur.com/JRq7yvA.png)
+> # Separando componentes
+![Imgur](https://imgur.com/8EHUG2R.png)
 
 ## Commit
-* Paginação da tabela usuários
+* Separando Header index | Logo | NavNotification | Profile | SearchBox
+* Separando Pagination index | PaginationItem
+* Separando SideBar index | NavSection | NavLink
+
