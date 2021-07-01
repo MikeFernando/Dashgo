@@ -1,8 +1,8 @@
 import { Header } from "../components/Header"
-import { ApexOptions } from 'apexcharts';
+import { ApexOptions } from 'apexcharts'
 import dynamic from 'next/dynamic'
 import { Box, Flex, SimpleGrid, Text, theme } from "@chakra-ui/react"
-import { Sidebar } from "../components/Sidebar"
+import { Sidebar } from "../components/SideBar"
 
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
@@ -70,7 +70,7 @@ export default function Dashboard() {
             <Sidebar />
             <SimpleGrid flex="1" gap="4" minChildWidth="320px" align="flex-start">
                <Box
-                  p="8"
+                  p={["6", "8"]}
                   pb="4"
                   borderRadius={8}
                   bg="gray.800">
@@ -80,7 +80,7 @@ export default function Dashboard() {
                   <Chart options={options} series={series} type="area" height={160} />
                </Box>
                <Box
-                  p="8"
+                  p={["8"]}
                   pb="4"
                   borderRadius={8}
                   bg="gray.800">

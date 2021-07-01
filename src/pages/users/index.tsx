@@ -11,15 +11,21 @@ import {
    Checkbox,
    Tbody,
    Td,
-   Text
+   Text,
+   useBreakpointValue
 } from '@chakra-ui/react'
 import { RiAddLine, RiEditLine } from 'react-icons/ri'
 
 import { Header } from '../../components/Header'
 import { Pagination } from '../../components/Pagination'
-import { Sidebar } from '../../components/Sidebar'
+import { Sidebar } from '../../components/SideBar'
 
 export default function UsersList() {
+   const isWideVersion = useBreakpointValue({
+      base: false,
+      lg: true
+   })
+
    return (
       <Box>
          <Header />
@@ -28,7 +34,7 @@ export default function UsersList() {
 
             <Box flex="1" my="6" borderRadius={8} bg="gray.800" p="8">
                <Flex mb="8" justify="space-between" align="center">
-                  <Heading size="lg" fontWeight="normal">Listagem de usuários</Heading>
+                  <Heading size="lg" fontWeight="normal">Usuários</Heading>
 
                   <Button
                      as="a"
@@ -47,7 +53,7 @@ export default function UsersList() {
                            <Checkbox colorScheme="pink" />
                         </Th>
                         <Th>usuários</Th>
-                        <Th>Data de cadastro</Th>
+                       {isWideVersion && <Th>Data de cadastro</Th>}
                         <Th width="8"></Th>
                      </Tr>
                   </Thead>
@@ -62,8 +68,8 @@ export default function UsersList() {
                               <Text fontWeight="noraml" fontSize="sm" color="gray.300">Mikera2021@outlook.com</Text>
                            </Box>
                         </Td>
-                        <Td>11 de Jun, 2021</Td>
-                        <Td>
+                       {isWideVersion && <Td>11 de Jun, 2021</Td>}
+                       {isWideVersion &&  <Td>
                            <Button
                               as="a"
                               size="sm"
@@ -72,7 +78,7 @@ export default function UsersList() {
                               leftIcon={<Icon as={RiEditLine} size="20" />}>
                               editar
                            </Button>
-                        </Td>
+                        </Td>}
                      </Tr>
                      <Tr>
                         <Td px="6">
@@ -84,8 +90,8 @@ export default function UsersList() {
                               <Text fontWeight="noraml" fontSize="sm" color="gray.300">Mikera2021@outlook.com</Text>
                            </Box>
                         </Td>
-                        <Td>11 de Jun, 2021</Td>
-                        <Td>
+                        {isWideVersion && <Td>11 de Jun, 2021</Td>}
+                        {isWideVersion &&  <Td>
                            <Button
                               as="a"
                               size="sm"
@@ -94,7 +100,7 @@ export default function UsersList() {
                               leftIcon={<Icon as={RiEditLine} size="20" />}>
                               editar
                            </Button>
-                        </Td>
+                        </Td>}
                      </Tr>
                      <Tr>
                         <Td px="6">
@@ -106,8 +112,8 @@ export default function UsersList() {
                               <Text fontWeight="noraml" fontSize="sm" color="gray.300">Mikera2021@outlook.com</Text>
                            </Box>
                         </Td>
-                        <Td>11 de Jun, 2021</Td>
-                        <Td>
+                        {isWideVersion && <Td>11 de Jun, 2021</Td>}
+                        {isWideVersion &&  <Td>
                            <Button
                               as="a"
                               size="sm"
@@ -116,7 +122,7 @@ export default function UsersList() {
                               leftIcon={<Icon as={RiEditLine} size="20" />}>
                               editar
                            </Button>
-                        </Td>
+                        </Td>}
                      </Tr>
                   </Tbody>
                </Table>
