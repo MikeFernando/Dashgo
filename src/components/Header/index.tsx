@@ -9,6 +9,7 @@ import { SearchBox } from './SearchBox'
 
 export function Header() {
    const { onOpen } = useSideBarDrawer();
+
    const isWideVersion = useBreakpointValue({
       base: false,
       lg: true
@@ -34,7 +35,6 @@ export function Header() {
                variant="unstyled"
                onClick={onOpen}
             >
-
             </IconButton>}
 
          <Logo />
