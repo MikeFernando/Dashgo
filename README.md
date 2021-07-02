@@ -1,9 +1,3 @@
-> # Listagem responsiva
+> # Fluxo de navegação
 
-                           Before
-
-> ![Imgur](https://imgur.com/58p5TQs.gif)
-
-                              After
-
-> ![Imgur](https://imgur.com/arrki7d.gif)
+> ![Imgur](https://imgur.com/8wjxaIc.gif)
