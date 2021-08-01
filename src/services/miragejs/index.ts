@@ -36,7 +36,7 @@ export function makeServer() {
          this.timing = 750;
 
          // paginação de usuários
-         this.get('users', function (schema, request) {
+         this.get('/users', function (schema, request) {
             const { page = 1, per_page = 10} = request.queryParams;
 
             const total = schema.all('user').length;
@@ -54,7 +54,8 @@ export function makeServer() {
             )
          });
 
-         this.post('users');
+         this.get('/users/:id');
+         this.post('/users');
 
          this.namespace = '';
          this.passthrough();
