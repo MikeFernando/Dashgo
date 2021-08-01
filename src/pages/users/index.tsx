@@ -16,6 +16,7 @@ import {
    Spinner,
 } from '@chakra-ui/react'
 import { RiAddLine, RiEditLine } from 'react-icons/ri'
+import { useState } from 'react'
 import Link from 'next/link'
 
 import { Header } from '../../components/Header'
@@ -24,7 +25,8 @@ import { Sidebar } from '../../components/SideBar'
 import { useUsers } from '../../services/hooks/useUsers'
 
 export default function UsersList() {
-   const { data, isLoading, isFetching, error } = useUsers();
+   const [page, setPage] = useState(1);
+   const { data, isLoading, isFetching, error } = useUsers(page);
 
    const isWideVersion = useBreakpointValue({
       base: false,
@@ -78,7 +80,7 @@ export default function UsersList() {
                            </Tr>
                         </Thead>
                         <Tbody>
-                           {data.map(user => {
+                           {data.users.map(user => {
                               return (
                                  <Tr key={user.id}>
                                     <Td px="6">
@@ -106,7 +108,11 @@ export default function UsersList() {
                            })}
                         </Tbody>
                      </Table>
-                     <Pagination />
+                     <Pagination
+                        totalCountOfRegister={data.totalCount}
+                        currentPage={page}
+                        onPageChange={setPage}
+                     />
                   </>
                )}
             </Box>
