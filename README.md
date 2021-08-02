@@ -69,7 +69,7 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo de [LICENÇA](h
 
 ---
 
-<p align="center">Feito com 💙 por Gabriel Borges</p>
+<p align="center">Feito com 💙 por Mike Fernando</p>
 
 
 
