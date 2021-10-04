@@ -55,10 +55,6 @@ $ yarn start
 
 &nbsp;
 
-### 🔗 Link para o projeto online
-
-
-[Dashgo](https://dashgo-gbdev13.vercel.app/)
 
 &nbsp;
 
