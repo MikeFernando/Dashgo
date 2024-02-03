@@ -6,7 +6,7 @@
 
 ## 📚 Informações sobre o projeto
 
-* Esse projeto foi desenvolvido durante um dos capitulos do Ignite da Rocketseat! A ideia era desenvolver um dashboard usando completamente o Chakra UI, também deixando a aplicação responsiva.
+* A ideia era desenvolver um dashboard usando completamente o Chakra UI, também deixando a aplicação responsiva.
 
 &nbsp;
 
