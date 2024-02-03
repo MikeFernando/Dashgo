@@ -4,7 +4,7 @@
 
 ![mock1](https://user-images.githubusercontent.com/71772559/113496123-d0aa6800-94cc-11eb-90dd-800b72502003.png)
 
-## 📚 Informações sobre o projeto
+## 📚 Informações sobre o projeto.
 
 * A ideia era desenvolver um dashboard usando completamente o Chakra UI, também deixando a aplicação responsiva.
 
